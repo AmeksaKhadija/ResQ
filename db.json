@@ -1,0 +1,178 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "regulateur@resq.com",
+      "password": "password123",
+      "name": "Marie Dupont",
+      "role": "REGULATOR"
+    },
+    {
+      "id": "2",
+      "email": "chef@resq.com",
+      "password": "password123",
+      "name": "Jean Martin",
+      "role": "FLEET_MANAGER"
+    }
+  ],
+  "ambulances": [
+    {
+      "id": "amb-1",
+      "callSign": "AMB-01",
+      "status": "BUSY",
+      "latitude": 33.5731,
+      "longitude": -7.5898,
+      "equipment": [
+        "Défibrillateur",
+        "Brancard",
+        "Oxygène"
+      ],
+      "crew": [
+        "Dr. Ahmed",
+        "Inf. Fatima"
+      ],
+      "lastUpdate": "2025-11-26T15:08:11.421Z"
+    },
+    {
+      "id": "amb-2",
+      "callSign": "AMB-02",
+      "status": "AVAILABLE",
+      "latitude": 33.5891,
+      "longitude": -7.6031,
+      "equipment": [
+        "Défibrillateur",
+        "Brancard",
+        "Oxygène",
+        "Médicaments"
+      ],
+      "crew": [
+        "Dr. Hassan",
+        "Inf. Sara"
+      ],
+      "lastUpdate": "2025-11-26T15:08:27.957Z"
+    },
+    {
+      "id": "amb-3",
+      "callSign": "AMB-03",
+      "status": "BREAK",
+      "latitude": 33.5951,
+      "longitude": -7.6151,
+      "equipment": [
+        "Défibrillateur",
+        "Brancard",
+        "Oxygène"
+      ],
+      "crew": [
+        "Dr. Rachid",
+        "Inf. Amina"
+      ],
+      "lastUpdate": "2025-11-26T15:08:15.233Z"
+    },
+    {
+      "id": "amb-4",
+      "callSign": "AMB-04",
+      "status": "MAINTENANCE",
+      "latitude": 33.5671,
+      "longitude": -7.5998,
+      "equipment": [
+        "Défibrillateur",
+        "Brancard"
+      ],
+      "crew": [],
+      "lastUpdate": "2025-11-26T15:08:18.162Z"
+    },
+    {
+      "id": "amb-5",
+      "callSign": "AMB-05",
+      "status": "AVAILABLE",
+      "latitude": 33.5801,
+      "longitude": -7.6101,
+      "equipment": [
+        "Défibrillateur",
+        "Brancard",
+        "Oxygène"
+      ],
+      "crew": [
+        "Dr. Karim",
+        "Inf. Laila"
+      ],
+      "lastUpdate": "2025-11-26T15:04:07.408Z"
+    },
+    {
+      "id": "amb-1764229357174",
+      "callSign": "AMB-06",
+      "status": "AVAILABLE",
+      "latitude": 33.5831,
+      "longitude": -7.6,
+      "equipment": [
+        "Défibrillateur",
+        "Brancard",
+        "Oxygène",
+        "Médicaments"
+      ],
+      "crew": [
+        "Dr. Laila",
+        "Inf. Youssef"
+      ],
+      "lastUpdate": "2025-11-27T07:42:37.174Z"
+    }
+  ],
+  "incidents": [
+    {
+      "id": "inc-1",
+      "address": "15 Avenue Hassan II, Casablanca",
+      "latitude": 33.5891,
+      "longitude": -7.6031,
+      "patientName": "Mohamed Ali",
+      "patientAge": 45,
+      "severity": "CRITICAL",
+      "status": "IN_PROGRESS",
+      "description": "Douleur thoracique, difficulté respiratoire",
+      "assignedAmbulanceId": "amb-2",
+      "createdAt": "2025-11-26T10:15:00Z",
+      "updatedAt": "2025-11-26T10:20:00Z"
+    },
+    {
+      "id": "inc-2",
+      "address": "78 Rue de la Liberté, Casablanca",
+      "latitude": 33.5781,
+      "longitude": -7.5938,
+      "patientName": "Fatima Zahra",
+      "patientAge": 28,
+      "severity": "MEDIUM",
+      "status": "PENDING",
+      "description": "Chute avec possible fracture du bras",
+      "createdAt": "2025-11-26T10:28:00Z",
+      "updatedAt": "2025-11-26T10:28:00Z"
+    },
+    {
+      "id": "inc-3",
+      "address": "42 Boulevard Mohammed V, Casablanca",
+      "latitude": 33.5921,
+      "longitude": -7.6181,
+      "patientName": "Ahmed Benani",
+      "patientAge": 67,
+      "severity": "HIGH",
+      "status": "IN_PROGRESS",
+      "description": "Malaise, perte de connaissance",
+      "createdAt": "2025-11-26T10:30:00Z",
+      "updatedAt": "2025-11-26T15:06:52.908Z",
+      "assignedAmbulanceId": "amb-1"
+    },
+    {
+      "id": "inc-4",
+      "address": "23 Rue Allal Ben Abdellah, Casablanca",
+      "latitude": 33.5701,
+      "longitude": -7.5878,
+      "patientName": "Nadia El Amrani",
+      "patientAge": 35,
+      "severity": "LOW",
+      "status": "COMPLETED",
+      "description": "Blessure mineure - coupure",
+      "assignedAmbulanceId": "amb-1",
+      "createdAt": "2025-11-26T08:45:00Z",
+      "updatedAt": "2025-11-26T09:30:00Z",
+      "completedAt": "2025-11-26T09:30:00Z"
+    }
+  ]
+}
